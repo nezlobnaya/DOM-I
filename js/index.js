@@ -112,3 +112,20 @@ content[4].textContent = siteContent["main-content"]['vision-content'];
 const middleImage = document.getElementById("middle-img");
 middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+//contact
+//headers h4
+
+header[5].textContent = siteContent.contact['contact-h4'];
+
+//content p
+
+content[5].textContent = siteContent.contact.address;
+content[6].textContent = siteContent.contact.phone;
+content[7].textContent = siteContent.contact.email;
+
+const addressOne = document.querySelector('.contact p')
+addressOne.style.width="25%"
+
+//footer
+
+content[8].textContent = siteContent.footer.copyright;
