@@ -40,3 +40,27 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+//nav
+
+const navigation = document.querySelectorAll('a');
+navigation.forEach((link, index) => {
+   link.textContent = siteContent.nav[`nav-item-${index++}`];
+   link.style.color = 'green';
+});
+
+const homeNav = document.createElement('a');
+homeNav.href = '#';
+homeNav.textContent = 'Home';
+
+const blog = document.createElement('a');
+blog.href = '#';
+blog.textContent = 'Blog';
+
+const nav = document.querySelector ('nav');
+nav.prepend(homeNav);
+
+const navBlog = document.querySelector ('nav');
+navBlog.appendChild(blog);
+
