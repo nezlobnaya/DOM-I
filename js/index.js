@@ -64,3 +64,20 @@ nav.prepend(homeNav);
 const navBlog = document.querySelector ('nav');
 navBlog.appendChild(blog);
 
+//cta 
+
+const ctaImag = document.getElementById("cta-img");
+ctaImag.setAttribute('src', siteContent.cta["img-src"]);
+
+const hOne = document.querySelector('h1');
+hOne.textContent = siteContent.cta.h1;
+
+
+
+// document.querySelector('h1').innerHTML = "DOM<br>Is<br>Awesome";
+
+
+const button = document.querySelector('button');
+button.textContent = siteContent.cta.button;
+
+
